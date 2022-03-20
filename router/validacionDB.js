@@ -1,9 +1,9 @@
 const res = require("express/lib/response");
 const user = require("../models/users");
 let prueba = true;
-let prueba2 = true;
 const regex = /^[0-9]*$/; // es un regex y ayuda a verificar si la entrada contiene solo numeros
 const validar = async (body,res,array) =>{
+    let prueba2 = true;
     if(body.email.includes("@") && body.email.includes(".")){
         if(regex.test(body.telefono) && body.telefono.length >0){
             if(body.nombre.trim() !== ""){
