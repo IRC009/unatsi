@@ -1,3 +1,4 @@
+//este archivo ya no lo uso en el programa, es solo una forma que hice yo mismo para validar
 const res = require("express/lib/response");
 const user = require("../models/users");
 let prueba = true;
@@ -18,8 +19,16 @@ const validar = async (body,res,array) =>{
                         }
                     });
                         if(prueba2 == true){
-                            console.log(typeof body.email)
-                            const guardar = new user(body);
+                            console.log("enviado")
+                            const objeto = {
+                                nombre: body.nombre,
+                                apellidos: body.apellidos,
+                                email: body.email,
+                                pais: body.pais,
+                                telefono: body.telefono,
+                                date: new Date()
+                            }
+                            const guardar = new user(objeto);
                             await guardar.save();
 
                             res.redirect("/registro-exitoso");

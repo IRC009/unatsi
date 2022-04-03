@@ -220,7 +220,7 @@ input{
     }
 
 }
-@media (max-width: 330px){
+@media (max-width: 430px){
     .container-date-segundario{
         height: 2%;
         margin-bottom: 38px;
@@ -232,19 +232,19 @@ input{
         margin-bottom: 5px;
     }
 }
-@media (max-height:  340px){
+@media (max-height:  605px){
     .cabecera{
         height: 50px;
     }
     .container{
-    height: 540px;
+    height: 580px;
     }
     .proxima-clase{
         font-size: 20px;
     }
 
 }
-@media (max-height:  550px){
+@media (max-height:  680px){
    .container-date-segundario{
        height: 2%;
        margin-bottom: 38px;
