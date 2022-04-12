@@ -56,7 +56,7 @@ router.post("/",async (req,res)=>{
         console.log("saved")
         //si todo sale bien respondemos con un json
         const token = jwt.sign({
-            data:savedUser
+            data:savedUser._id
         },process.env.TOKEN_SECRET);
     
         res.cookie("authToken",token,{httpOnly:true}) //httpOnly para que no se pida desde el cliente

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #ebebeb;
+}
+
+.encuesta-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    background-color: #ebebeb;
+}
+.card-encuesta{
+    width: 80%;
+    box-shadow: 0 0 3px rgb(188, 188, 188);
+    background-color: #fff;
+    border-radius: 2%;
+}
+.sesion1{
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #6d0986;
+    border-radius: 2%;
+    color: rgb(255, 255, 255);
+}
+.titulo-encuesta{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.parrafo1{
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.sesion2{
+    padding: 17px;
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-del-formulario{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #1c1c1c;
+    font-weight: 400;
+}
+div{
+    margin-bottom: 10px;
+}
+label{
+    color: #1c1c1c;
+    font-weight: 300;
+}
+.submit-encuesta{
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #58096c;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="estilo-encuesta.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <h1 class="formulario-title">Formulario</h1>
+        </nav>
+    </header>
+    <div class="encuesta-body">
+        <main class="card-encuesta">
+            <section class="sesion1">
+                <h1 class="titulo-encuesta">Encuesta sobre el horario para próxima clase</h1>
+                <p class="parrafo1">Escoja el horario que más le favorezca para unirse a la próxima sesión</p>
+            </section>
+            <section class="sesion2">
+                <form class="formulario-encuesta" >
+                    <h2 class="titulo-del-formulario">¿Qué fecha y hora puede usted unirse a la próxima sesión? puede escoger múltiples respuestas</h2>
+                    <div>
+                        <input type="checkbox" name="opcion1" value="opcion1" id="1">
+                        <label class="opcion1" for="1">1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="opcion2" value="opcion2" id="2">
+                        <label class="opcion2" for="2">2</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="opcion3" value="opcion3" id="3">
+                        <label class="opcion3" for="3">3</label>
+                    </div>                    
+                    <div>
+                        <input type="checkbox" name="opcion4" value="opcion4" id="4">
+                        <label class="opcion4" for="4">4</label>
+                    </div>
+                    <input class="submit-encuesta" type="submit" value="Enviar">
+                </form>
+            </section>
+    
+        </main>
+
+    </div>
+
+    <script src="encuesta.js"></script>
+</body>
+</html>
