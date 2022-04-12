@@ -58,6 +58,10 @@ div{
 label{
     color: #1c1c1c;
     font-weight: 300;
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
 }
 .submit-encuesta{
     margin-top: 15px;
@@ -69,4 +73,14 @@ label{
     background-color: #58096c;
     color: rgb(255, 255, 255);
     font-weight: 300;
+    cursor: pointer;
+}
+
+.submit-encuesta:hover{
+    background-color: #80119c;
+}
+
+.submit-encuesta:active{
+    background-color: #1e0225;
+    color: #8f7a94;
 }
