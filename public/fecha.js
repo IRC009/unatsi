@@ -9,7 +9,7 @@ const segundo2 = document.querySelector(".segundo2");
 
 const contador = ()=>{
     const actualDate = new Date();
-    const nextDate = new Date("Sat apr 19 2022 14:30:00 GMT-0500 (hora estándar de Colombia)");
+    const nextDate = new Date("Sat apr 19 2022 18:30:00 GMT-0500 (hora estándar de Colombia)");
     const sec = Math.floor((nextDate-actualDate) / 1000);
     const seconds = sec % 60;
     const minutes = Math.floor((sec / 60)) % 60;
