@@ -9,6 +9,6 @@ const schemaEncuesta = new Schema({
     ip: String
 });
 
-const modelEncuesta = mongoose.model("sesionencuesta",schemaEncuesta);
+const modelEncuesta = mongoose.model("sesionencuestas",schemaEncuesta);
 
 module.exports = modelEncuesta;

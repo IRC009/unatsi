@@ -34,6 +34,11 @@ router.post("/",async (req,res)=>{
             {error: 'Email ya registrado'}
         )
     }
+    if(body.telefono.length < 8 || body.telefono.length > 15){
+        return res.status(400).json(
+            {error: 'ingrese un número de telefono valido'}
+        )
+    }
     const regex = /^[0-9]*$/; // es una expresion irregular
     const onlyNumbers = regex.test(body.telefono); //no sé  como validad numéros asi que uso esto por ahora
     if(!onlyNumbers){
