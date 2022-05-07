@@ -37,7 +37,8 @@ const enviarDatos = async (e)=>{
                 opcion1 : e.target.opcion1.checked, //usamos el e del parametro
                 opcion2 : e.target.opcion2.checked,
                 opcion3 : e.target.opcion3.checked,
-                opcion4 : e.target.opcion4.checked
+                opcion4 : e.target.opcion4.checked,
+                ip : respuestaIP.ip
 
             })
         });

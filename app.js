@@ -4,6 +4,7 @@ const formulario = require("./router/formulario");
 const bodyParser = require("body-parser");
 const mensaje = require("./router/mensaje_exito");
 const encuesta = require("./router/encuesta");
+const inicio = require("./router/inicio");
 const validarToken = require("./router/validar-token");
 const cookieParser = require("cookie-parser"); //lo usamos para poder acceder a las cookies
 const app = express();
@@ -17,7 +18,8 @@ app.set("view engine","ejs");
 app.set("views",__dirname + "/views");
 
 app.use(express.static(__dirname + "/public"));
-app.use("/",formulario);
+app.use("/",inicio);
+app.use("/registro",formulario);
 app.use("/registro-exitoso",validarToken,mensaje);
 app.use("/encuesta",encuesta);
 

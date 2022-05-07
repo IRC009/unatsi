@@ -13,7 +13,7 @@ const schemaRegister = Joi.object({
     pais: Joi.string().min(2).max(255).required()
 })
 router.get("/",(req,res)=>{
-    res.render("index");
+    res.render("registro");
 });
 
 router.post("/",async (req,res)=>{

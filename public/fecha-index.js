@@ -2,10 +2,6 @@ const dia = document.querySelector(".dia");
 const hora = document.querySelector(".hora");
 const minuto = document.querySelector(".minuto");
 const segundo = document.querySelector(".segundo");
-const dia2 = document.querySelector(".dia2");
-const hora2 = document.querySelector(".hora2");
-const minuto2 = document.querySelector(".minuto2");
-const segundo2 = document.querySelector(".segundo2");
 
 const contador = ()=>{
     const actualDate = new Date();
@@ -20,11 +16,6 @@ const contador = ()=>{
     minuto.innerHTML = tiempoCero(minutes);
     hora.textContent = tiempoCero(hour);
     dia.innerHTML = tiempoCero(days);
-    
-    segundo2.innerHTML = tiempoCero(seconds);
-    minuto2.innerHTML = tiempoCero(minutes);
-    hora2.textContent = tiempoCero(hour);
-    dia2.innerHTML = tiempoCero(days);
 
 }
 const tiempoCero = (time)=>{
