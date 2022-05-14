@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const mensaje = require("./router/mensaje_exito");
 const encuesta = require("./router/encuesta");
 const inicio = require("./router/inicio");
+const admin = require("./router/admin");
 const validarToken = require("./router/validar-token");
 const cookieParser = require("cookie-parser"); //lo usamos para poder acceder a las cookies
 const app = express();
@@ -22,6 +23,7 @@ app.use("/",inicio);
 app.use("/registro",formulario);
 app.use("/registro-exitoso",validarToken,mensaje);
 app.use("/encuesta",encuesta);
+app.use("/admin",admin)
 
 app.use((req,res,next)=>{
     res.status(404).render("404",{mensaje:"Esta página no está disponible", nombre:"404"});

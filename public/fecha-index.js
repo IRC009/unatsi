@@ -3,9 +3,15 @@ const hora = document.querySelector(".hora");
 const minuto = document.querySelector(".minuto");
 const segundo = document.querySelector(".segundo");
 
+let tiempo ;
+const consultarFecha = async ()=>{
+    const data = await fetch("https://www.unatsi.com/admin/fechaproximaclase");
+    const res = await data.json();
+    tiempo = res.fecha;
+}
 const contador = ()=>{
     const actualDate = new Date();
-    const nextDate = new Date("5 14 2022 20:00:00 GMT-0500 (hora estándar de Colombia)");
+    const nextDate = new Date(`${tiempo} GMT-0500 (hora estándar de Colombia)`);
     const sec = Math.floor((nextDate-actualDate) / 1000);
     const seconds = sec % 60;
     const minutes = Math.floor((sec / 60)) % 60;
@@ -27,4 +33,5 @@ const tiempoCero = (time)=>{
     }
 }
 
+consultarFecha();
 setInterval(contador,1000)
