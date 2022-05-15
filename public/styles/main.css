@@ -9,12 +9,12 @@ a{
     color: #040814;
 }
 .header{
-    background-image: url("/assets/pexel.webp");
+    background-image: url("../assets/pexels-aleksandar-pasaric-1694000.webp");
     height: 628px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 8px solid #8b178f;
+    border-bottom: 3px solid #292929;
 }
 .navegacion{
     display: flex;
@@ -132,7 +132,9 @@ h4{
     justify-content: center;
     align-items: center;
     background-color: #040814;
-    border-bottom: 1px solid #8b178f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #292929;
     overflow: hidden;
 }
 .container-seccion{
@@ -159,7 +161,7 @@ h4{
 }
 
 .html-seccion{
-    width: 35%;
+    width: 30%;
     height: auto;
     position: relative;
     right: -800px;
@@ -177,7 +179,7 @@ h4{
 .html-seccion2{
     display: relative;
     height: auto;
-    width: 35%;
+    width: 30%;
 }
 .titulo-html-seccion2{
     width: 100%;
@@ -204,7 +206,7 @@ h4{
 }
 .titulo-ask{
     font-size: 40px;
-    color: #fff;
+    color: #000;
     margin-bottom: 25px;
 }
 .container-ask{
@@ -214,7 +216,7 @@ h4{
     justify-content: center;
     width: 100%;
     padding: 100px 0 100px 0;
-    background-color: #040814;
+    background-color: #dddddd;
     color: #fff;
     border-bottom: 4px solid #040814;
 }
