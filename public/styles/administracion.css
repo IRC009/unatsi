@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-color: #0d1018;
+}
+
+.h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 22px;
+    color: #fff;
+}
+.container-admin{
+    margin: 0 auto;
+    width: 400px;
+    padding: 100px 10px;
+    color: #fff;
+}
+.formulario-admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 5px;
+    background-color: #0d1018;
+}
+
+.label{
+    position: absolute;
+    font-size: 12px;
+    top: 10px;
+    left: 12px;
+    color: rgb(142, 142, 142);
+}
+.button-submit{
+    width: 288px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #8b178f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-submit:hover{
+    background-color: #ab2daf;
+}
+.fecha,.contraseña{
+    padding: 26px 12px 14px;
+    width: 286px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border: 1px solid #8f888f;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #0d1018;
+    
+}
+
+.fecha:focus{
+    outline: 1px solid #f700ff;
+}
+.contraseña:focus{
+    outline: 1px solid #f700ff;
+}
+
+@media (max-width:740px) {
+    .container-admin{
+        width: 100%;
+    }
+    .inputs{
+        width: 100%;
+    }
+    .fecha,.contraseña{
+        width: 100%;
+    }
+    .button-submit{
+        width: 100%;
+    }
+}

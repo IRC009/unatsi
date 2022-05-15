@@ -12,12 +12,27 @@
 
     <title>Admin</title>
     <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/administracion.css">
 </head>
 <body>
-    <form action="https://www.unatsi.com/admin" method="post">
-        <input type="text" name="fecha" value="<%= fecha.fecha %> ">
-        <input type="password" name="contraseña">
-        <input type="submit">
-    </form>
+    <main class="container-admin">
+            <h1 class="h1">Admin</h1>
+        <form action="https://www.unatsi.com/admin" method="post" class="formulario-admin">
+            <div class="inputs">
+                <label class="label" for="fecha">Fecha</label>
+                <input class="fecha" id="fecha" type="text" name="fecha" value="<%= fecha.fecha %> ">
+            </div>
+            <div class="inputs">
+                <label class="label" for="contraseña">Contraseña</label>
+                <input class="contraseña" id="contraseña" type="password" name="contraseña">
+            </div>
+            
+            <input class="button-submit" type="submit">
+        </form>
+    </main>
+    
 </body>
 </html>
