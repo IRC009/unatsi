@@ -26,16 +26,16 @@ router.post("/",async (req,res)=>{
     };
     const {error} = schemaRegister.validate(bodyS);
     if(error){
-        return res.status(400).json({ error: error.details[0].message})
+        return res.json({ error: error.details[0].message})
     }
     const isEmailExist = await user.findOne({email : req.body.email});//con esto valido el email que no exista
     if(isEmailExist){
-        return res.status(400).json(
+        return res.json(
             {error: 'Email ya registrado'}
         )
     }
     if(body.telefono.length < 8 || body.telefono.length > 15){
-        return res.status(400).json(
+        return res.json(
             {error: 'ingrese un número de telefono valido'}
         )
     }
@@ -65,11 +65,13 @@ router.post("/",async (req,res)=>{
         },process.env.TOKEN_SECRET);
     
         res.cookie("authToken",token,{httpOnly:true}) //httpOnly para que no se pida desde el cliente
-        res.redirect("/registro-exitoso");
+        res.json({
+            mensaje: "registro exitoso"
+        });
             
     } catch (error) {
         //estado de error
-        res.status(400).json({error})
+        res.json({error})
     }
     
 })

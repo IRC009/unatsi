@@ -13,103 +13,64 @@
     <title>Unatsi-formulario</title>
     <link rel="stylesheet" href="/styles/formulario.css">
     <link rel="shortcut icon" href="styles//assets/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!--Google adsense-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6323026865272288"
      crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="cabecera">
-        <nav>
-            <h1 class="formulario-title">Formulario</h1>
+        <nav class="nav">
+           <a href="http://www.unatsi.com">
+               <img class="logo-principal" src="/assets/unatsi.png" alt="Logo-unatsi">
+           </a>
         </nav>
-    </header>
-    <div class="container">
-        <div class="container-fecha">
-            <img src="/assets/Sin título-5.png" alt="Unatsi" class="imagen-unatsi">
-            <div class="container-date container-date-principal">
-                <h2 class="proxima-clase">Proxima clase en</h2>
-                <div class="container-date2">
-                    <div class="fecha-divs">
-                        <h3 class="item-h3">Días</h3>
-                        <h4 class="dia">0</h4>
-                    </div>
-                    <div class="fecha-divs">
-                            <h3 class="item-h3">Horas</h3>
-                            <h4 class="hora">0</h4>
-                    </div>
-                    <div class="fecha-divs">
-                            <h3 class="item-h3">Minutos</h3>
-                            <h4 class="minuto">0</h4>
-                    </div>
-                    <div class="fecha-divs">
-                            <h3 class="item-h3">Segundos</h3>
-                            <h4 class="segundo">0</h4>
-                    </div>
-                </div>    
-            </div>
-        </div>
-        
-        <div class="container-formulario">
-
+    </header>   
+        <main class="container-formulario">
+            <h1 class="h1">Registrarse</h1>
             <div class="card">
-                <div class="container-date container-date-segundario">
-                    <h2 class="proxima-clase">Proxima clase en</h2>
-                    <div class="container-date2">
-                        <div class="fecha-divs">
-                            <h3 class="item-h3">Días</h3>
-                            <h4 class="dia dia2">0</h4>
-                        </div>
-                        <div class="fecha-divs">
-                                <h3 class="item-h3">Horas</h3>
-                                <h4 class="hora hora2">0</h4>
-                        </div>
-                        <div class="fecha-divs">
-                                <h3 class="item-h3">Minutos</h3>
-                                <h4 class="minuto minuto2">0</h4>
-                        </div>
-                        <div class="fecha-divs">
-                                <h3 class="item-h3">Segundos</h3>
-                                <h4 class="segundo segundo2">0</h4>
-                        </div>
-                    </div>    
-                </div>
-                <form class="formulario" method="post" action="/">
+                
+                <form class="formulario">
                     <div class="container-group">
                         
                         <h3>Nombre</h3>
                         <input type="text" class="input nombre" name="nombre">
+                        <p class="p-error p-nombre">Ingrese un nombre valido</p>
                     </div>
                     <div class="container-group">
                         
                         <h3>Apellidos</h3>
                         <input type="text" class="input apellidos" name="apellidos">
+                        <p class="p-error p-apellidos">Verifique su apellido valido</p>
                     </div>
                     <div class="container-group">
                         
                         <h3>Correo electrónico</h3>
                         <input type="email" class="input email" name="email">
+                        <p class="p-error p-email">Ingrese un email valido</p>
                     </div>
                     <div class="container-group">
                         
                         <h3>País</h3>
-                        <input type="text" class="input telefono" name="pais" placeholder="Ejemplo: Colombia, Perú, Chile...">
+                        <input type="text" class="input pais" name="pais" placeholder="Ejemplo: Colombia, Perú, Chile...">
+                        <p class="p-error p-pais">Ingrese un pais valido</p>
                     </div>
                     <div class="container-group">
                         
                         <h3>Número de teléfono</h3>
                         <input type="number" class="input telefono" name="telefono" placeholder="Ejemplo: +57 ...">
+                        <p class="p-error p-telefono">Verifique su número de telefono</p>
                     </div>
                     <div class="container-group btn-enviar">
 
                         <input type="submit" class="btn-submit" value="Registrarse">
                     </div>
-                    <img src="/assets/Sin título-5.png" alt="Unatsi" class="img-formulario">
                 </form>
             </div>
             
-        </div>
-    </div>
-
-<script src="fecha.js"></script>
+        </main>
+<script src="/registro.js"></script>
 </body>
 </html>

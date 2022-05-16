@@ -33,7 +33,6 @@ const enviarDatos = async (e)=>{
 }
 
 formulario.addEventListener("submit",  (e)=>{
-    e.preventDefault();
     enviarDatos(e); //enviamos el parametro e para usarlo en el envio de datos
     
 });
