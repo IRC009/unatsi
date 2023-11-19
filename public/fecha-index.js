@@ -5,7 +5,7 @@ const segundo = document.querySelector(".segundo");
 
 let tiempo ;
 const consultarFecha = async ()=>{
-    const data = await fetch("https://www.unatsi.com/admin/fechaproximaclase");
+    const data = await fetch("/admin/fechaproximaclase");
     const res = await data.json();
     tiempo = res.fecha;
 }

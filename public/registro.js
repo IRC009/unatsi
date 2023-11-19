@@ -39,7 +39,7 @@ formulario.addEventListener("submit",async (e)=>{
 const mostrarError = (data)=>{
     if(data.mensaje == "registro exitoso"){
         formulario.reset(); //reiniciamos el formulario
-        return window.location.href = "https://www.unatsi.com/registro-exitoso"
+        return window.location.href = "/registro-exitoso"
     }
 
     if(data.error.includes("nombre")){
